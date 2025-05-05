@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url();
+        background-size: cover;
+        }
+        header {
+            background-color: #308cab;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        #email {
+            width: 92%;
+            padding: 12px 20px;
+        
+        }
+        nav {
+            display: inline-block;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(46, 31, 31, 0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: linear-gradient(45deg, #308cab, #3f8cda);
+            color: #fff;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            border-top: 3px solid #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nancharla Akhila</h1>
+    <nav>
+        <a href="#Bio">Bio</a>
+        <a href="#Hobbies">Hobbies</a>
+        <a href="#Email">Contact</a>
+    </nav>
+</header>
+<main>
+    <section id="Bio">
+        <h2>Bio</h2>
+        <div class="bio-content">
+            <img src="photo.jpg" alt="Photo" width="25%" height="5%">
+            <p>I am Nancharla Akhila from Vatsavai,Andhra Pradesh.I am currently pursuing my B.Tech degree in Computer Science at Seshadri Rao Gudlavalleru Engineering College.With a passion for software engineering, I have developed skills in Python, JavaScript, ExpressJS, NodeJS, SQL, Java, HTML, CSS.</p>
+        </div>
+    </section>
+    <section id="Hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Listening Music</li>
+            <li>Reading Books</li>
+            <li>Playing Games</li>
+        </ul>
+    </section>
+
+    <section id="Email">
+        <h2>Contact Me</h2>
+        <form id="email-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" margin=5px10px5px0 required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3"  cols="3"></textarea>
+            <input type="submit" value="Send Message" >
+        </form>
+    </section>
+
+        <script>
+        document.getElementById('email-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // You can add form validation and submission logic here
+            alert('Message sent successfully!');
+        });
+    </script>
+    </main>
+    <footer>
+        <p>Email:akhilanancharla185@gmail.com</p>
+    </footer>
+</body>
+</html>

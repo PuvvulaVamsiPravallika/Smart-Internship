@@ -1,0 +1,63 @@
+
+.skill-section {
+    background: hsl(0, 0%, 100%); 
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .skill-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5fc7ff; 
+  }
+  
+  .skill-section .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .skill-section .skill {
+    flex: 1 1 200px;
+    background: #f0f0f0; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: grow 0.5s ease-in-out;
+  }
+  
+  .skill-section .skill-name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-section .skill-bar {
+    background: #ddd; 
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-section .skill-level {
+    height: 100%;
+    background: linear-gradient(to right, #5f94ff, #73b1f8); 
+    transition: width 0.5s ease-in-out;
+  }
+  
+  @keyframes grow {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

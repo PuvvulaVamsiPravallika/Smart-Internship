@@ -1,0 +1,24 @@
+.profile-details {
+    background: rgba(255, 255, 255, 0.9); 
+    color: #ed6161;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .profile-details h1 {
+    font-size: 2rem;
+    color: #e01d1d; 
+  }
+  
+  .profile-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .profile-details .bio {
+    font-style: italic;
+    color: #010101; 
+  }
